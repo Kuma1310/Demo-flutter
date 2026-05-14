@@ -10,7 +10,7 @@ class MovieStreamingApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'FlutFlix',
+      title: 'Netflix',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         brightness: Brightness.dark,
@@ -76,7 +76,7 @@ class _MovieHomeScreenState extends State<MovieHomeScreen> {
         title: Row(
           children: [
             const Text(
-              'FLUTFLIX',
+              'NETFLIX',
               style: TextStyle(
                 color: Color(0xFFE50914),
                 fontWeight: FontWeight.bold,
@@ -102,7 +102,11 @@ class _MovieHomeScreenState extends State<MovieHomeScreen> {
           ),
           const SizedBox(width: 15),
           IconButton(
-            icon: const Icon(Icons.notifications, size: 28, color: Colors.white),
+            icon: const Icon(
+              Icons.notifications,
+              size: 28,
+              color: Colors.white,
+            ),
             onPressed: () {},
           ),
           const SizedBox(width: 15),
@@ -137,15 +141,10 @@ class _MovieHomeScreenState extends State<MovieHomeScreen> {
       padding: const EdgeInsets.symmetric(horizontal: 15.0),
       child: TextButton(
         onPressed: () {},
-        style: TextButton.styleFrom(
-          foregroundColor: Colors.white,
-        ),
+        style: TextButton.styleFrom(foregroundColor: Colors.white),
         child: Text(
           title,
-          style: const TextStyle(
-            fontSize: 16,
-            fontWeight: FontWeight.w500,
-          ),
+          style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
         ),
       ),
     );
@@ -184,7 +183,7 @@ class HeroBanner extends StatelessWidget {
                 Colors.black87,
                 Colors.transparent,
                 Colors.transparent,
-                Color(0xFF141414)
+                Color(0xFF141414),
               ],
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
@@ -209,7 +208,7 @@ class HeroBanner extends StatelessWidget {
                       color: Colors.black.withOpacity(0.5),
                       offset: const Offset(2, 2),
                       blurRadius: 4,
-                    )
+                    ),
                   ],
                 ),
                 textAlign: TextAlign.center,
@@ -229,7 +228,11 @@ class HeroBanner extends StatelessWidget {
                 children: [
                   ElevatedButton.icon(
                     onPressed: () {},
-                    icon: const Icon(Icons.play_arrow, color: Colors.black, size: 28),
+                    icon: const Icon(
+                      Icons.play_arrow,
+                      color: Colors.black,
+                      size: 28,
+                    ),
                     label: const Text(
                       'Play',
                       style: TextStyle(
@@ -240,7 +243,10 @@ class HeroBanner extends StatelessWidget {
                     ),
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.white,
-                      padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 30,
+                        vertical: 15,
+                      ),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(4),
                       ),
@@ -249,7 +255,11 @@ class HeroBanner extends StatelessWidget {
                   const SizedBox(width: 20),
                   ElevatedButton.icon(
                     onPressed: () {},
-                    icon: const Icon(Icons.info_outline, color: Colors.white, size: 28),
+                    icon: const Icon(
+                      Icons.info_outline,
+                      color: Colors.white,
+                      size: 28,
+                    ),
                     label: const Text(
                       'More Info',
                       style: TextStyle(
@@ -260,17 +270,20 @@ class HeroBanner extends StatelessWidget {
                     ),
                     style: ElevatedButton.styleFrom(
                       backgroundColor: const Color.fromRGBO(109, 109, 110, 0.7),
-                      padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 30,
+                        vertical: 15,
+                      ),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(4),
                       ),
                     ),
                   ),
                 ],
-              )
+              ),
             ],
           ),
-        )
+        ),
       ],
     );
   }
